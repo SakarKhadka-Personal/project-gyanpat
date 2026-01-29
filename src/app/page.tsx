@@ -41,10 +41,10 @@ function Header() {
       <nav className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-              <GraduationCap className="h-5 w-5 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
+              <GraduationCap className="h-6 w-6 text-white" />
             </div>
-            <span className="text-lg font-bold text-foreground">GyanPat</span>
+            <span className="text-xl font-bold text-foreground font-segoe tracking-tight">GyanPath</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -118,7 +118,7 @@ function Hero() {
               <span className="relative">
                 business
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 10C50 2 150 2 198 10" stroke="#f97316" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 2 150 2 198 10" stroke="var(--primary)" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
@@ -151,7 +151,7 @@ function Hero() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-200 to-orange-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white"
+                    className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white flex items-center justify-center text-xs font-bold text-white"
                   >
                     {String.fromCharCode(64 + i)}
                   </div>
@@ -192,10 +192,10 @@ function Hero() {
                 </div>
               </div>
 
-              <div className="absolute bottom-20 right-0 bg-white rounded-2xl p-3 shadow-lg animate-float delay-300 hidden lg:block">
+              <div className="absolute bottom-20 right-0 bg-white rounded-2xl p-3 shadow-lg animate-float delay-300 hidden lg:block border border-yellow-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Star className="h-4 w-4 text-primary fill-primary" />
+                  <div className="w-8 h-8 rounded-lg bg-yellow-100 flex items-center justify-center">
+                    <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
                   </div>
                   <span className="text-xs font-medium">4.9 Rating</span>
                 </div>
@@ -222,22 +222,22 @@ function Services() {
       icon: BookOpen,
       title: "Learning",
       description: "Digital classroom solutions with live classes, recorded lectures, and interactive assessments.",
-      color: "bg-orange-50",
-      iconColor: "text-primary",
+      color: "bg-green-50",
+      iconColor: "text-green-500",
     },
     {
       icon: MessageSquare,
       title: "Communication",
       description: "Keep everyone connected with unified messaging, notifications, and announcements.",
-      color: "bg-green-50",
-      iconColor: "text-green-500",
+      color: "bg-yellow-50",
+      iconColor: "text-yellow-600",
     },
     {
       icon: Users,
       title: "Administration",
       description: "Streamline all administrative tasks from admissions to fee management.",
-      color: "bg-purple-50",
-      iconColor: "text-purple-500",
+      color: "bg-blue-50",
+      iconColor: "text-primary",
     },
   ];
 
@@ -308,7 +308,7 @@ function Solutions() {
           <div className="relative order-2 lg:order-1 animate-slide-right">
             <div className="relative">
               <Image
-                src="https://illustrations.popsy.co/amber/remote-work.svg"
+                src="https://illustrations.popsy.co/blue/remote-work.svg"
                 alt="Working together"
                 width={500}
                 height={400}
@@ -410,7 +410,7 @@ function About() {
           {/* Illustration */}
           <div className="relative animate-fade-up delay-200">
             <Image
-              src="https://illustrations.popsy.co/amber/business-analysis.svg"
+              src="https://illustrations.popsy.co/green/business-analysis.svg"
               alt="Business analysis"
               width={500}
               height={400}
@@ -494,7 +494,7 @@ function Testimonials() {
               className="bg-white p-6 rounded-2xl border border-border card-lift"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-300 to-orange-500 flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center text-white font-bold shadow-md">
                   {item.avatar}
                 </div>
                 <div>
@@ -624,9 +624,10 @@ function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: Phone, label: "Phone", value: "+91 123 456 7890" },
-                { icon: Mail, label: "Email", value: "info@gyanpat.com" },
-                { icon: MapPin, label: "Office", value: "123 Tech Park, New Delhi, India" },
+                { icon: Phone, label: "Phone", value: "9828635445" },
+                { icon: Mail, label: "Email", value: "gyanpathpvtltd@gmail.com" },
+                { icon: MapPin, label: "Office", value: "Nepalgunj Banke, Nepal" },
+                { icon: Users, label: "Contact Person", value: "Sunil Bhandari" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -676,14 +677,20 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border">
           <div className="sm:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-                <GraduationCap className="h-5 w-5 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-md">
+                <GraduationCap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-lg font-bold text-foreground">GyanPat</span>
+              <span className="text-xl font-bold text-foreground font-segoe">GyanPath</span>
             </a>
-            <p className="text-sm text-muted-foreground max-w-xs mb-6">
+            <p className="text-sm text-muted-foreground max-w-xs mb-4">
               Empowering educational institutions with innovative technology solutions.
             </p>
+            <div className="space-y-1 mb-6">
+              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider opacity-60">Company Details</p>
+              <p className="text-sm text-foreground font-semibold">Gyanpath</p>
+              <p className="text-xs text-muted-foreground">VAT/PAN: 622468107</p>
+              <p className="text-xs text-muted-foreground">Nepalgunj Banke</p>
+            </div>
             <div className="flex gap-3">
               {["f", "t", "in"].map((social, i) => (
                 <a
@@ -715,7 +722,7 @@ function Footer() {
 
         <div className="pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} GyanPat. All rights reserved.
+            &copy; {new Date().getFullYear()} GyanPath Pvt. Ltd. All rights reserved.
           </p>
         </div>
       </div>
