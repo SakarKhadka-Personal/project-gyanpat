@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navItems = ["Home", "About", "Services", "Contact"];
+    const navItems = ["Home", "Services ", "About", "Contact"];
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md">
@@ -35,7 +35,7 @@ export const Navbar = () => {
                             href="#contact"
                             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-primary rounded-full btn-primary"
                         >
-                            Sign Up
+                            Book A Demo
                         </a>
                         <button
                             onClick={() => setIsOpen(!isOpen)}

@@ -1,5 +1,6 @@
 import { links } from "@/constant";
 import { GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 export const Footer = () => {
     return (
@@ -9,7 +10,7 @@ export const Footer = () => {
                     <div className="sm:col-span-2">
                         <a href="#" className="flex items-center gap-2 mb-4">
                             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-md">
-                                <GraduationCap className="h-6 w-6 text-white" />
+                                <Image src={"/logo.jpeg"} alt="Gyanpath" width={40} height={40} className="rounded-sm" />
                             </div>
                             <span className="text-xl font-bold text-foreground font-segoe">GyanPath</span>
                         </a>
@@ -55,6 +56,7 @@ export const Footer = () => {
                     <p className="text-sm text-muted-foreground">
                         &copy; {new Date().getFullYear()} GyanPath Pvt. Ltd. All rights reserved.
                     </p>
+                    <p className="text-sm text-muted-foreground">Design & Developed by <a href="https://sakarkhadka.com.np" target="_blank" rel="noopener noreferrer"><span className="text-black font-medium">Sakar Khadka</span></a></p>
                 </div>
             </div>
         </footer>

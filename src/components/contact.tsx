@@ -16,7 +16,7 @@ export const ContactUs = () => {
                                     <input
                                         type="text"
                                         className="w-full px-4 py-3 text-sm rounded-xl border border-border bg-secondary/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                                        placeholder="John Doe"
+                                        placeholder="Sakar K."
                                     />
                                 </div>
                                 <div>
@@ -24,7 +24,7 @@ export const ContactUs = () => {
                                     <input
                                         type="tel"
                                         className="w-full px-4 py-3 text-sm rounded-xl border border-border bg-secondary/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
-                                        placeholder="+91 98765 43210"
+                                        placeholder="9865657440"
                                     />
                                 </div>
                             </div>
