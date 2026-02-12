@@ -1,28 +1,8 @@
 import { Users, User, Briefcase } from "lucide-react";
 import Image from "next/image";
+import { TeamMembers } from "@/constant/index";
 
 export const Team = () => {
-  const teamMembers = [
-    {
-      name: "Sunil Bhandari",
-      role: "Chief Executive Officer (CEO)",
-      bio: "Leads the company's strategic vision and business growth initiatives.",
-      image: "/sunil_bhandari.jpeg",
-    },
-    {
-      name: "Sanjay Bhatta",
-      role: "Chief Technology Officer (CTO)",
-      bio: "Drives innovation and oversees the technical development of our solutions.",
-      image: "/sanjay_bhatta.jpeg",
-    },
-    {
-      name: "Sushil Bhandari",
-      role: "Project Manager",
-      bio: "Manages project delivery and ensures successful implementation of solutions.",
-      image: "/susil_bhandari.jpeg",
-    },
-  ];
-
   return (
     <section id="team" className="py-20 md:py-28 gradient-orange-soft">
       <div className="max-w-6xl mx-auto px-6">
@@ -40,7 +20,7 @@ export const Team = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
+          {TeamMembers.map((member, index) => (
             <div
               key={index}
               className={`animate-fade-up delay-${
@@ -48,7 +28,7 @@ export const Team = () => {
               } bg-white rounded-2xl p-6 shadow-lg card-lift hover:shadow-xl transition-all duration-300`}
             >
               <div className="flex items-center gap-5 mb-5">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 flex-shrink-0">
+                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20 shrink-0">
                   <Image
                     src={member.image}
                     alt={member.name}
