@@ -1,14 +1,13 @@
 import { AboutUs } from "@/components/about";
 import { Clients } from "@/components/clients";
+import { ContactUs } from "@/components/contact";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
 import { Solutions } from "@/components/solutions";
+import { Team } from "@/components/team";
 import { Testimonials } from "@/components/testimonials";
-import { Contact } from "lucide-react";
-
-
 
 // Main Page
 export default function Home() {
@@ -20,9 +19,10 @@ export default function Home() {
         <Solutions />
         <AboutUs />
         <Clients />
+        <Team />
         <Testimonials />
         <CTA />
-        <Contact />
+        <ContactUs />
       </main>
       <Footer />
     </>
