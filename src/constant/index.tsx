@@ -1,43 +1,51 @@
 import {
-  BarChart3,
-  BookOpen,
+  Bell,
   Building2,
   GraduationCap,
-  MessageSquare,
+  Laptop,
+  Megaphone,
+  Printer,
   School,
-  Users,
 } from "lucide-react";
 
 export const services = [
   {
-    icon: BarChart3,
-    title: "Analytics",
+    icon: GraduationCap,
+    title: "School Management Software",
     description:
-      "Track performance metrics and make data-driven decisions with our comprehensive analytics.",
+      "Complete and smart school management solutions to simplify administration, communication, attendance, exams, and fee management.",
     color: "bg-blue-50",
     iconColor: "text-blue-500",
   },
   {
-    icon: BookOpen,
-    title: "Learning",
+    icon: Laptop,
+    title: "Web & Mobile App Development",
     description:
-      "Digital classroom solutions with live classes, recorded lectures, and interactive assessments.",
+      "Custom website and mobile application development tailored to your business needs. Modern, responsive, secure, and user-friendly solutions.",
     color: "bg-green-50",
     iconColor: "text-green-500",
   },
   {
-    icon: MessageSquare,
-    title: "Communication",
+    icon: Bell,
+    title: "SS Bell & Annual Maintenance",
     description:
-      "Keep everyone connected with unified messaging, notifications, and announcements.",
+      "Upgrade your school communication with a smart bell and announcement system—app-controlled scheduling, instant live announcements, and seamless audio distribution anytime, anywhere.",
     color: "bg-yellow-50",
     iconColor: "text-yellow-600",
   },
   {
-    icon: Users,
-    title: "Administration",
+    icon: Megaphone,
+    title: "Digital Marketing",
     description:
-      "Streamline all administrative tasks from admissions to fee management.",
+      "Grow your business with our expert digital marketing services including social media marketing, SEO, online advertising, and branding strategies.",
+    color: "bg-blue-50",
+    iconColor: "text-primary",
+  },
+  {
+    icon: Printer,
+    title: "Digital Printing Solutions",
+    description:
+      "High-quality and professional digital printing services for banners, brochures, business cards, posters, and more.",
     color: "bg-blue-50",
     iconColor: "text-primary",
   },
@@ -86,6 +94,12 @@ export const TeamMembers = [
     role: "Project Manager",
     bio: "Manages project delivery and ensures successful implementation of solutions.",
     image: "/susil_bhandari.jpeg",
+  },
+  {
+    name: "Sakar Khadka",
+    role: "Full Stack Developer",
+    bio: "Brings ideas to life through elegant code and thoughtful system design.",
+    image: "/icon.webp",
   },
 ];
 
